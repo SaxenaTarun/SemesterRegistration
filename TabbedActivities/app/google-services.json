@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "554839362058",
+    "firebase_url": "https://semregister-65445.firebaseio.com",
+    "project_id": "semregister-65445",
+    "storage_bucket": "semregister-65445.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554839362058:android:8a42bfd4840e3d651d2df3",
+        "android_client_info": {
+          "package_name": "com.example.tabbedactivities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554839362058-3185bp5bki1ji6fa4s5b8673von0q1ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzJJoIpTn2aPccovZ0NLFoSRqshw9mG9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554839362058-3185bp5bki1ji6fa4s5b8673von0q1ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

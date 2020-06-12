@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="30dp"
+    >
+    <TextView
+        android:id="@+id/enrollmentNo"
+        android:text="BTXXYYYXXXX"
+        android:textAlignment="center"
+        android:textColor="#27496d"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Form ID"
+            style="@style/headingStyle"
+            android:layout_weight="50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/individualFormId"
+            android:text="wertyuiokjnbv cdf"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:padding="15dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            style="@style/headingStyle"
+            android:text="Payment Mode" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/individualPaymentMode"
+            android:text="NEFT"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="UTR No."
+            style="@style/headingStyle"
+            android:layout_weight="50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/individualUTRNo"
+            android:text="23456787654"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Bank"
+            style="@style/headingStyle"
+            android:layout_weight="50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/individualBankName"
+            android:text="wertyuiokjnbv cdf"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name"
+            style="@style/headingStyle"
+            android:layout_weight="50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/individualName"
+            android:text="wertyuiokjnbv cdf"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Semester Applied For"
+            style="@style/headingStyle"
+            android:layout_weight="50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/individualSemester"
+            android:text="wertyuiokjnbv cdf"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Backlogs"
+            style="@style/headingStyle"
+            android:layout_weight="50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/individualBacklog"
+            android:text="False"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Core Subjects"
+            style="@style/headingStyle"
+            android:textAlignment="center"
+            android:layout_weight="50"/>
+
+        <ListView
+
+            android:id="@+id/individualCoreSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elective Subjects"
+            style="@style/headingStyle"
+            android:textAlignment="center"
+            android:layout_weight="50"/>
+        <TextView
+            android:id="@+id/individualElectiveSubjects"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/approveForm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Approve Application"
+            android:textColor="@color/white"
+            android:background="@color/success"
+            android:layout_weight="50"
+            />
+        <Button
+            android:id="@+id/rejectForm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Reject Application"
+            android:layout_weight="50"
+            android:textColor="@color/white"
+            android:background="@color/design_default_color_error"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

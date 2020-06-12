@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pending Applications"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+        <ListView
+            android:id="@+id/pendingApplications"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_height="250dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Approved Applications"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+        <ListView
+            android:id="@+id/approvedApplications"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_height="250dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rejected Applications"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+        <ListView
+            android:id="@+id/rejectedApplications"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_height="250dp"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+</ScrollView>

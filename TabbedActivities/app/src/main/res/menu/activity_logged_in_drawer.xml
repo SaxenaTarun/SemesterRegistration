@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/edit_profile"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_apply_semesmter_new"
+            android:icon="@drawable/apply"
+            android:title="Apply For Semester" />
+        <item
+            android:id="@+id/nav_apply_extension"
+            android:icon="@drawable/apply"
+            android:title="Apply For fee Extension" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedback"
+            android:title="FeedBack"
+            />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/report"
+            android:title="Report" />
+
+    </group>
+</menu>

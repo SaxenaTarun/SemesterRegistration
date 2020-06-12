@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are You Sure to Logout"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#27496d"
+        style="@style/AppTheme"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/yes_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:background="#9CCC65"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#ffffff"
+            android:text="Yes"/>
+        <Button
+            android:id="@+id/no_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#EF5350"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#ffffff"
+            android:text="No"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Form for Fee Extension"
+                android:textColor="#27496d"
+                android:fontFamily="sans-serif-condensed-medium"
+                style="@style/AppTheme"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/first_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/format_extension"
+                style="@style/AppTheme"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <Spinner
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/extension_reason_array"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <EditText
+                android:id="@+id/text_reason"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Enter your Reason Here"
+                android:inputType="textMultiLine"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#27496d"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/format_extension_2"
+                style="@style/AppTheme"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank You."
+                android:textColor="#27496d"
+                android:fontFamily="sans-serif-condensed-medium"
+                style="@style/AppTheme"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            <Button
+                android:id="@+id/request_extension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request"
+                android:background="#00909e"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

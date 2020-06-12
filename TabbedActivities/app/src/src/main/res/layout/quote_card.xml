@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backgroundquote">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:text="Simplicity is the ultimate Sophistication."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:textColor="#fff"
+        style="@style/AppTheme"
+        android:text="- Steve Jobs"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

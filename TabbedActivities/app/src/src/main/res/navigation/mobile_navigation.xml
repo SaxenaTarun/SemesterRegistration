@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tabbedactivities.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.example.tabbedactivities.ui.edit_profile.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/nav_apply_semesmter_new"
+        android:name="com.example.tabbedactivities.ui.applySemesterNew.ApplySemesterNewFragment"
+        android:label="Apply for New Semester"
+        tools:layout="@layout/apply_semester_new" />
+    <fragment
+        android:id="@+id/nav_apply_extension"
+        android:name="com.example.tabbedactivities.ui.feeextension.FeeExtension"
+        android:label="Apply for Fee Extension"
+        tools:layout="@layout/fragment_fee_extension" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.tabbedactivities.ui.logout.Logout"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout"
+         />
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.tabbedactivities.ui.feedback.FeedbackFragment"
+        android:label="FeedBack"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.example.tabbedactivities.ui.report.ReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_report" />
+
+</navigation>

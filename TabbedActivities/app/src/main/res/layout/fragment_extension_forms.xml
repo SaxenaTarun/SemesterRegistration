@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pending Extension Applications"
+            android:textAlignment="center"
+            android:textColor="#27496d"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingTop="8dp"
+            android:textSize="30dp"/>
+        <ListView
+            android:id="@+id/pendingExtensionApplications"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/border"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Approved Extension Applications"
+            android:textAlignment="center"
+            android:textColor="#27496d"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingTop="8dp"
+            android:textSize="30dp"/>
+        <ListView
+            android:id="@+id/approvedExtensionApplications"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/border"
+            android:layout_margin="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rejected Extension Applications"
+            android:textColor="#27496d"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:textSize="30dp"/>
+        <ListView
+            android:id="@+id/rejectedExtensionApplications"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/border"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+</ScrollView>
