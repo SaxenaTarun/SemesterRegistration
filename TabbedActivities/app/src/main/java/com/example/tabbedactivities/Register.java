@@ -123,19 +123,20 @@ public class Register extends Fragment {
                                        user.put("enrollment_no", en);
                                        user.put("enrolled", false);
                                    }
-                                   documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                       @Override
-                                       public void onSuccess(Void aVoid) {
-                                           Toast.makeText(getContext(), "SuccessFully Created User", Toast.LENGTH_LONG).show();
-                                       }
-                                   }).addOnFailureListener(new OnFailureListener() {
-                                       @Override
-                                       public void onFailure(@NonNull Exception e) {
-                                           Toast.makeText(getContext(), "Some Error Occured. Please try again.", Toast.LENGTH_LONG).show();
-                                       }
-                                   });
+
                                    if(task.isSuccessful()){
                                        register_btn.setClickable(true);
+                                       firebaseFirestore.collection("users").document(firebaseAuth.getCurrentUser().getUid()).set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                           @Override
+                                           public void onSuccess(Void aVoid) {
+                                               Toast.makeText(getContext(), "SuccessFully Created User", Toast.LENGTH_LONG).show();
+                                           }
+                                       }).addOnFailureListener(new OnFailureListener() {
+                                           @Override
+                                           public void onFailure(@NonNull Exception e) {
+                                               Toast.makeText(getContext(), "Some Error Occured. Please try again.", Toast.LENGTH_LONG).show();
+                                           }
+                                       });
                                        Toast.makeText(getActivity(), "SuccessFully Registered. Please Verify your Email.\n Check your Registered Email", Toast.LENGTH_LONG).show();
                                    } else {
                                        Toast.makeText(getActivity(), task.getException().getMessage(), Toast.LENGTH_LONG).show();
